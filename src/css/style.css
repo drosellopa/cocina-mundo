@@ -9,10 +9,13 @@
 :root {
     --dark1: #222;
     --dark2: #777;
+    --dark-opacity: #0003;
     --main1: #f8bf2c;
     --main2: #F2B410;
     --light1: #fff; 
     --light2: #ddd;
+    scroll-behavior: smooth;
+    
 }
 body {
     font-family: "Lora", serif;
@@ -33,10 +36,7 @@ nav {
     font-style: normal;
     text-transform: uppercase;
 }
-nav a {
-    font-weight: 600;
-    text-decoration: none;
-}
+
 .comic-title {
     font-family: "Tangerine", cursive;
     font-weight: 700;
@@ -45,33 +45,32 @@ nav a {
     color: var(--main2);    
 }
 /* Botones */
-.boton {
-    width: 170px;
-    margin: 30px auto 0;
+.button {
+    /* width: 170px; */
+    margin: auto;
     text-decoration: none;
-    padding: 15px 10px;
+    padding: 15px 30px;
     border-radius: 2px;
     cursor: pointer;
     user-select: none;
     transition: .5s;
-    display: block;
+    display: inline-block;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: .8rem;;
+    font-weight: 500;
+    font-size: .8rem;
+    letter-spacing: 3px;
 }
 .bclaro {
-    background-color: #0004;
+    background-color: var(--dark-opacity);
     color: var(--light1);
     border: 1px solid var(--dark2);
 }
 .bclaro:hover {
     background-color: #fff2;
     color: var(--light1);
-    border: 1px solid var(--light1);
-    
+    border: 1px solid var(--light1);    
 }
-
 .bmain {
     background-color: var(--main2);
     color: var(--light1);
@@ -82,6 +81,7 @@ nav a {
     background-color: var(--main1);
     
 }
+/* Secciones */
 section {
     padding: 80px 30px;
 }
@@ -96,6 +96,14 @@ section h2 {
 .centrada {
     text-align: center;
 }
+/* Párrafos */
+p {
+    color: var(--dark2);
+    line-height: 1.5rem;
+    font-size: .9rem;
+
+}
+
 
 
 figure {
@@ -112,48 +120,194 @@ figure img {
 
 /* HEADER  */
 .main-header {    
-    background-image: linear-gradient(#000a,#000a),url(../img/ceviche.jpg);
+    background-image: linear-gradient(#000a,#000a),url(../img/mesa6.jpg);
     background-position: center;
     background-size: cover;
     color: var(--light2);
 }
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: #0003;
-    padding: 10px;
+.header-container {    
+    background-color: var(--dark-opacity);
+    padding: 20px 10px;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: 2s;
+    z-index: 100;
     
 }
+.header-container > .section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#author {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--light2);
+}
 .fa-bars {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: var(--light2);
+}
+.fa-bars:hover {
+    color: var(--light1);
+    cursor: pointer;
 }
 .main-header-title{
     text-align: center;
-    padding: 80px 20px;
+    padding: 200px 20px;
 }
 .main-header-title h1 {
     color: var(--light1);
     margin: 10px 0;
 }
 .main-header-title p {
-    font-size: .8rem;
+    color: var(--light2);
+    font-weight: 700;
+}
+.main-header-title .button {
+    margin-top: 30px;
 }
     /* menu */
 
 .main-menu {
     position: fixed;
-    width: 300px;
-    background-color: var(--dark1);
-    padding: 20px;
-    right: -300px;
+    top: 70px;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    background-color: #000e;
+    padding: 50px 20px;
+    transition: .5s;
 }
 .main-menu li{
     margin-bottom: 1.5rem;
+    list-style: none;
+    text-align: center;
 }
 .main-menu a {
-    color: var(--light1);
-    
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--light1);  
+    transition: .5s; 
+}
+.main-menu a:hover {
+    color: var(--main1);
 }
 
-/**/
+/* SECTION HISTORIA */
+#historia .button {
+    margin-top: 30px;
+}
 
+/* SECTION FAVORITA */
+#favorita {
+    padding: 150px 20px;
+    background-image: linear-gradient(#0008,#0008),url(../img/mesa2.jpg);
+    background-size: cover;
+    color: var(--light1);
+}
+
+/* RECETAS */ 
+#recetas {
+
+}
+.contenedor-recetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px
+}
+.recetas {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.recetas img {
+    width: 100%;
+}
+
+/* MAIN FOOTER */
+#main-footer {
+    background-color: var(--dark1);
+    color: var(--light1);
+    padding: 50px 30px;
+}
+
+.footer-container {
+    
+}
+.footer-column {
+    padding: 30px;
+}
+.footer-column > * {
+    margin-bottom: 5px;
+}
+.footer-column a {
+    color: var(--light1);
+}
+
+/* SECTION GALERIA*/
+#galeria {
+    background-color: var(--dark2);
+}
+#galeria h2 {
+    /* color: var(--light1); */
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.galeria li {
+    overflow: hidden;
+    border: 2px solid var(--main1);
+    border-radius: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    cursor: pointer;
+    transition: .5s;
+}
+.galeria img:hover {
+    scale: 110%;
+}
+
+.galeria li:nth-child(3) {
+    grid-row: span 2;
+    
+}
+.galeria li:nth-child(6) {
+    grid-column: span 2;
+    
+}
+.galeria li:nth-child(8) {
+    grid-row: span 2;
+    
+}
+.galeria li:last-of-type {
+    grid-column: span 2;
+}
+/* FLECHA ARRIBA */
+.fa-arrow-up {
+    color: var(--main1);
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
+    text-decoration: none;
+    font-size: 2rem;
+    opacity: .7;
+    z-index: 100;
+    display: none;
+    text-shadow: 3px 3px 3px black;
+}
+.fa-arrow-up:hover {
+    opacity: 1;
+    color: var(--main2);
+}
