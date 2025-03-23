@@ -21,6 +21,7 @@
     "> 0.5%, last 2 versions, not dead, IE 11"
   ],
   "dependencies": {
+    "jquery": "^3.7.1",
     "lightbox2": "^2.11.5"
   }
 }
