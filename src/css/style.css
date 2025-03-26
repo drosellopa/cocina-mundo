@@ -8,7 +8,7 @@
 }
 :root {
     --dark1: #222;
-    --dark2: #777;
+    --dark2: #444;
     --dark-opacity: #0003;
     --main1: #f8bf2c;
     --main2: #F2B410;
@@ -101,7 +101,7 @@ section h2 {
 p {
     color: var(--dark2);
     line-height: 1.5rem;
-    font-size: .9rem;
+    font-size: 1rem;
 
 }
 
@@ -288,8 +288,8 @@ figure img {
     padding: 50px 30px;
 }
 
-.footer-container {
-    
+.footer-text {
+    color:var(--light2);
 }
 .footer-column {
     padding: 30px;
@@ -342,7 +342,7 @@ figure img {
     bottom: 40px;
     text-decoration: none;
     font-size: 2rem;
-    opacity: .7;
+    opacity: .8;
     z-index: 100;
     display: none;
     text-shadow: 3px 3px 3px black;
