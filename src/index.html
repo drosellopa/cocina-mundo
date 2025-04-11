@@ -45,7 +45,16 @@
 
                 <a href="#recetas" class="button bmain">Recetas</a>
                 <figure>
-                    <img src="./img/ceviche.jpg" alt="Ceviche de pescado">
+                    <!-- <img src="./img/ceviche.webp" alt="Ceviche de pescado"> -->
+                    <img 
+                        srcset="./img/ceviche_400w.webp 400w, 
+                                ./img/ceviche_800w.webp 800w, 
+                                ./img/ceviche.webp 1024w" 
+                        src="./img/ceviche.webp" 
+                        sizes="(min-width: 1200px) 1000px, 
+                            (min-width: 978px) 800px, 
+                            400px"
+                        alt="Ceviche de pescado">
                     <figcaption>
                         <p>Ceviche de pescado | <small>Imagen: Grok IA</small></p>
                     </figcaption>

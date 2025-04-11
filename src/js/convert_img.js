@@ -1,0 +1,56 @@
+const sharp = require("sharp");
+const fs = require("fs");
+const path = require("path");
+
+const inputFolder = path.join(__dirname, "../img"); // Ruta de la carpeta img
+const outputFolder = inputFolder; // Se guardan las imágenes en la misma carpeta
+
+// Por si no encuentra la carpeta
+if (!fs.existsSync(inputFolder)) {
+    console.error("La carpeta de origen no existe:", inputFolder);
+    process.exit(1);
+}
+
+// Aquí se leeen todos los archivos de la carpeta
+fs.readdir(inputFolder, (err, files) => {
+    if (err) {
+        console.error("Error al leer la carpeta:", err);
+        return;
+    }
+
+    files.forEach((file) => {
+        const inputPath = path.join(inputFolder, file);
+        const ext = path.extname(file).toLowerCase();
+
+        // Buscamos jpg o archivos jpeg
+        if (ext === ".jpg" || ext === ".jpeg") {
+            const baseName = path.basename(file, ext);
+
+            // Convertimos a webp
+            const originalOutput = path.join(outputFolder, `${baseName}.webp`);
+            sharp(inputPath)
+                .toFormat("webp")
+                .toFile(originalOutput)
+                .then(() => console.log(`✔ ${originalOutput} creado`))
+                .catch(err => console.error(`Error con ${file}:`, err));
+
+            // Imagen redimensionada a 800px de ancho y le añadimos _800w al nombre
+            const output800 = path.join(outputFolder, `${baseName}_800w.webp`);
+            sharp(inputPath)
+                .resize({ width: 800 })
+                .toFormat("webp")
+                .toFile(output800)
+                .then(() => console.log(`✔ ${output800} creado`))
+                .catch(err => console.error(`Error con ${file}:`, err));
+
+            // Imagen redimensionada a 400px de ancho
+            const output400 = path.join(outputFolder, `${baseName}_400w.webp`);
+            sharp(inputPath)
+                .resize({ width: 400 })
+                .toFormat("webp")
+                .toFile(output400)
+                .then(() => console.log(`✔ ${output400} creado`))
+                .catch(err => console.error(`Error con ${file}:`, err));
+        }
+    });
+});
