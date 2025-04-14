@@ -102,10 +102,7 @@ p {
     color: var(--dark2);
     line-height: 1.5rem;
     font-size: 1rem;
-
 }
-
-
 
 figure {
     text-align: left;
@@ -117,14 +114,13 @@ figure img {
     
 }
 
-
-
 /* HEADER  */
 .main-header {    
     background-image: linear-gradient(#000a,#000a),url(../img/mesa6.jpg);
     background-position: center;
     background-size: cover;
     color: var(--light2);
+    position: relative;
 }
 .header-container {    
     background-color: var(--dark-opacity);
@@ -135,6 +131,7 @@ figure img {
     right: 0;
     transition: 2s;
     z-index: 100;
+    
     
 }
 .header-container > .section-container {
@@ -159,6 +156,55 @@ figure img {
     text-align: center;
     padding: 200px 20px;
 }
+svg.spiral  {
+    position: absolute;
+    top: 0;
+    left: 0;  
+   
+    opacity: .3;
+    animation-name: spiral;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+svg.spiral > path { 
+    stroke-width: 1px;
+    animation-name: spiral_stroke;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes spiral {
+    0% { 
+        transform: rotate(0);        
+    }   
+    100% {
+        transform: rotate(360deg); 
+        
+    }
+}
+@keyframes spiral_stroke {
+    0% { stroke-width: 1px;  stroke: #fff5; }
+   
+    50% { stroke-width: 5px;  stroke: #f8bf2cee;}
+   
+    100% {stroke-width: 1px;  stroke: #fff5;}
+}
+.main-header-title img {
+    /* opacity: 0; */
+    animation-name: header_animate;
+    animation-delay: .5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    clip-path: circle(0%);
+}
+/* Animación header_animate */
+@keyframes header_animate {
+    from {clip-path: circle(0%);}
+    to { clip-path: circle(100%);}
+}
+
 .main-header-title h1 {
     color: var(--light1);
     margin: 10px 0;
@@ -170,6 +216,9 @@ figure img {
 .main-header-title .button {
     margin-top: 30px;
 }
+
+
+
 
 /* MAIN MENU  */
 
@@ -352,6 +401,14 @@ figure img {
     color: var(--main2);
 }
 
+/*  RESPONSIVE TABLET  600PX*/
+@media (min-width: 600px){
+    .main-header-title img {
+        width: 300px;
+        margin-bottom: 25px;
+    }
+}
+
 /*  RESPONSIVE ORDENADOR  978PX*/
 
 @media (min-width: 978px){
@@ -501,11 +558,15 @@ main.receta li {
     margin-bottom: 5px;
 }
 
-.aji-main {
+.receta.aji-main {
     background-image: linear-gradient(#000a,#000a),url(../img/aji_gallina.jpg);
 }
-.cangrejo-main {
+.receta.cangrejo-main {
     background-image: linear-gradient(#0008,#0008),url(../img/reventado_cangrejo.jpg);
+}
+.receta {
+    background-size: cover;
+    background-position: center;
 }
 .receta-header {
     text-align: center;

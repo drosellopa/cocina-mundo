@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../node_modules/lightbox2/dist/css/lightbox.min.css">
     <script src="../node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js" type="module"></script>  
     <script src="./js/cocina.js" type="module"></script>
+    <link rel="icon" href="./img/favicon.png">
 </head>
 <body>
     <header class="main-header">
@@ -29,6 +30,15 @@
             
         </div> <!-- Header container -->
         <div class="main-header-title">
+            <svg class="spiral" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 100 100 
+                         m -75, 0 
+                         a 75,75 0 1,0 150,0 
+                         a 60,60 0 1,0 -120,0 
+                         a 45,45 0 1,0 90,0 
+                         a 30,30 0 1,0 -60,0" 
+                      fill="none" stroke="#fff5" stroke-width="1"/>
+            </svg>
             <img src="./img/logo2.webp" alt="Logotipo" width="250">
             <!-- <img src="./img/spiral.png" alt="Logotipo Espiral" width="120"> -->
             <h1>Cocina Peruana</h1>
@@ -250,7 +260,7 @@
                         >
                     </a></li>
                     <li><a href="img/postre2.jpg" data-lightbox="recetas" data-title="Postre | Image by Pexels from Pixabay">
-                        <img 
+                        <!-- <img 
                             srcset="
                                 ./img/postre2_400w.webp 400w, 
                                 ./img/postre2_800w.webp 800w, 
@@ -260,7 +270,21 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/postre2.jpg"
                             alt="Postre 2"
-                        >
+                        > -->
+                        <!-- DIRECCIÓN DE ARTE -->
+                        <picture>
+                            <source 
+                                media="(min-width: 978px)" 
+                                srcset="./img/postre2_da_978w.webp"
+                            >
+                            <source 
+                                srcset="./img/postre2_800w.webp"
+                            >
+                            <img 
+                                src="./img/postre2.jpg" 
+                                alt="Postre 2"
+                            >
+                        </picture>
                     </a></li>
                     <li><a href="img/mesa8.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
                         <img 
