@@ -84,15 +84,48 @@
                 <h3>Galería de fotos</h3>
                 <div class="galeria-receta">
                     <figure>
-                        <img src="./img/aji_cebolla.jpg" alt="Ají y cebolla">
+                        <!-- <img src="./img/aji_cebolla.jpg" alt="Ají y cebolla"> -->
+                        <img 
+                            srcset="
+                                ./img/aji_cebolla_400w.webp 400w, 
+                                ./img/aji_cebolla_800w.webp 800w, 
+                                ./img/aji_cebolla.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/aji_cebolla.jpg"
+                            alt="Ají con cebolla"
+                        >
                         <figcaption>Ají <small>Foto: Grok.ai</small></figcaption>
                     </figure>
                     <figure>
-                        <img src="./img/cangrejo.jpg" alt="Cangrejo">
+                        <!-- <img src="./img/cangrejo.jpg" alt="Cangrejo"> -->
+                        <img 
+                            srcset="
+                                ./img/cangrejo_400w.webp 400w, 
+                                ./img/cangrejo_800w.webp 800w, 
+                                ./img/cangrejo.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/cangrejo.jpg"
+                            alt="Cangrejo"
+                        >
                         <figcaption>Cangrejo <small>Foto: Grok.ai</small></figcaption>
                     </figure>
                     <figure>
-                        <img src="./img/cebolla.jpg" alt="Cebolla cortada en juliana">
+                        <!-- <img src="./img/cebolla.jpg" alt="Cebolla cortada en juliana"> -->
+                        <img 
+                            srcset="
+                                ./img/cebolla_400w.webp 400w, 
+                                ./img/cebolla_800w.webp 800w, 
+                                ./img/cebolla.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/cebolla.jpg"
+                            alt="Cebolla cortada en juliana"
+                        >
                         <figcaption>Cebolla cortada en juliana <small>Foto: Grok.ai</small></figcaption>
                     </figure>
                 </div>

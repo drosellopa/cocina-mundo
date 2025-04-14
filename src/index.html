@@ -74,7 +74,18 @@
                 <div class="contenedor-recetas">
                     <article class="recetas">
                         <figure>
-                            <img src="./img/aji_gallina.jpg" alt="Ají de gallina">
+                            <!-- <img src="./img/aji_gallina.jpg" alt="Ají de gallina"> -->
+                            <img 
+                                srcset="
+                                    ./img/aji_gallina_400w.webp 400w, 
+                                    ./img/aji_gallina_800w.webp 800w, 
+                                    ./img/aji_gallina.webp 1024w"
+                                sizes="
+                                    (min-width: 978px) 1024px, 
+                                    (min-width: 600px) 800px, 400px"
+                                src="./img/aji_gallina.jpg"
+                                alt="Ají de gallina"
+                            >
                             <figcaption>
                                 <p>Ají de gallina. <small>Foto: <a href="https://commons.wikimedia.org/wiki/File:Aj%C3%AD_de_gallina_-_Tradicional.jpg">Feralbt</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</small></p>
                             </figcaption>
@@ -85,7 +96,18 @@
                     </article>
                     <article class="recetas">
                         <figure>
-                            <img src="./img/reventado_cangrejo.jpg" alt="Reventado de cangrejo">
+                            <!-- <img src="./img/reventado_cangrejo.jpg" alt="Reventado de cangrejo"> -->
+                            <img 
+                                srcset="
+                                ./img/reventado_cangrejo_400w.webp 400w, 
+                                ./img/reventado_cangrejo_800w.webp 800w, 
+                                ./img/reventado_cangrejo.webp 1024w"
+                                sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                                src="./img/reventado_cangrejo.jpg"
+                                alt="Reventado de cangrejo" 
+                            >
                             <figcaption><p>Reventado de cangrejo. <small>Imagen: Grok.ai</small></p></figcaption>
                         </figure>
                         
@@ -94,13 +116,35 @@
                         <a href="./reventado_cangrejo.html" class="button bmain">Leer más</a>
                     </article>
                     <article class="recetas">
-                        <img src="./img/mesa3.jpg" alt="Receta 3">
+                        <!-- <img src="./img/mesa3.jpg" alt="Receta 3"> -->
+                        <img 
+                            srcset="
+                                ./img/mesa3_400w.webp 400w, 
+                                ./img/mesa3_800w.webp 800w, 
+                                ./img/mesa3.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa3.jpg"
+                            alt="Mesa 3"
+                        >
                         <h3>Receta 3</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit eum rem eos pariatur, est vitae necessitatibus deserunt labore voluptas. Fugit vel aut excepturi architecto? Neque!</p>
                         <a href="#" class="button bmain">Leer más</a>
                     </article>
                     <article class="recetas">
-                        <img src="./img/mesa4.jpg" alt="Receta 4">
+                        <!-- <img src="./img/mesa4.jpg" alt="Receta 4"> -->
+                        <img 
+                            srcset="
+                                ./img/mesa4_400w.webp 400w, 
+                                ./img/mesa4_800w.webp 800w, 
+                                ./img/mesa4.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa4.jpg"
+                            alt="Receta 4"
+                        >
                         <h3>Receta 4</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit eum rem eos pariatur, est vitae necessitatibus deserunt labore voluptas. Fugit vel aut excepturi architecto? Neque!</p>
                         <a href="#" class="button bmain">Leer más</a>
@@ -116,16 +160,134 @@
                 <h2>Galería de fotos</h2>
                 <ul class="galeria">
                    
-                    <li><a href="./img/mesa1.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img src="img/mesa1.jpg" alt="Receta 1"></a></li>
-                    <li><a href="./img/mesa2.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img src="./img/mesa2.jpg" alt="mesa2"></a></li>
-                    <li><a href="./img/postre1.jpg" data-lightbox="recetas" data-title="Postre | Image by Pexels from Pixabay"><img src="./img/postre1.jpg" alt="Postre"></a></li>
-                    <li><a href="img/mesa3.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img src="./img/mesa3.jpg" alt="mesa4"></a></li>
-                    <li><a href="img/mesa4.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img src="./img/mesa4.jpg" alt="mesa5"></a></li>
-                    <li><a href="img/mesa5.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img src="./img/mesa5.jpg" alt="mesa6"></a></li>
-                    <li><a href="img/mesa6.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img src="./img/mesa6.jpg" alt="mesa7"></a></li>
-                    <li><a href="img/postre2.jpg" data-lightbox="recetas" data-title="Postre | Image by Pexels from Pixabay"><img src="./img/postre2.jpg" alt="postre"></a></li>
-                    <li><a href="img/mesa8.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img src="./img/mesa8.jpg" alt="mesa9"></a></li>
-                    <li><a href="img/mesa9.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img src="./img/mesa9.jpg" alt="mesa10"></a></li>
+                    <li><a href="./img/mesa1.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA"><img 
+                        srcset="
+                            ./img/mesa1_400w.webp 400w, 
+                            ./img/mesa1_800w.webp 800w, 
+                            ./img/mesa1.webp 1024w"
+                        sizes="
+                            (min-width: 978px) 1024px, 
+                            (min-width: 600px) 800px, 400px"
+                        src="./img/mesa1.jpg"
+                        alt="Receta 1"
+                    ></a></li>
+                    <li><a href="./img/mesa2.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
+                        <img 
+                            srcset="
+                                ./img/mesa2_400w.webp 400w, 
+                                ./img/mesa2_800w.webp 800w, 
+                                ./img/mesa2.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa2.jpg"
+                            alt="Mesa 2"
+                        >
+                    </a></li>
+                    <li><a href="./img/postre1.jpg" data-lightbox="recetas" data-title="Postre | Image by Pexels from Pixabay">
+                        <img 
+                            srcset="
+                                ./img/postre1_400w.webp 400w, 
+                                ./img/postre1_800w.webp 800w, 
+                                ./img/postre1.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/postre1.jpg"
+                            alt="Postre 1"
+                        >
+                    </a></li>
+                    <li><a href="img/mesa3.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
+                        <img 
+                            srcset="
+                                ./img/mesa3_400w.webp 400w, 
+                                ./img/mesa3_800w.webp 800w, 
+                                ./img/mesa3.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa3.jpg"
+                            alt="Mesa 3"
+                        >
+                    </a></li>
+                    <li><a href="img/mesa4.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
+                        <img 
+                            srcset="
+                                ./img/mesa5_400w.webp 400w, 
+                                ./img/mesa5_800w.webp 800w, 
+                                ./img/mesa5.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa5.jpg"
+                            alt="Mesa 5"
+                        >
+                    </a></li>
+                    <li><a href="img/mesa5.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
+                        <img 
+                            srcset="
+                                ./img/mesa6_400w.webp 400w, 
+                                ./img/mesa6_800w.webp 800w, 
+                                ./img/mesa6.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa6.jpg"
+                            alt="Mesa 6"
+                        >
+                    </a></li>
+                    <li><a href="img/mesa6.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
+                        <img 
+                            srcset="
+                                ./img/mesa7_400w.webp 400w, 
+                                ./img/mesa7_800w.webp 800w, 
+                                ./img/mesa7.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa7.jpg"
+                            alt="Mesa 7"
+                        >
+                    </a></li>
+                    <li><a href="img/postre2.jpg" data-lightbox="recetas" data-title="Postre | Image by Pexels from Pixabay">
+                        <img 
+                            srcset="
+                                ./img/postre2_400w.webp 400w, 
+                                ./img/postre2_800w.webp 800w, 
+                                ./img/postre2.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/postre2.jpg"
+                            alt="Postre 2"
+                        >
+                    </a></li>
+                    <li><a href="img/mesa8.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
+                        <img 
+                            srcset="
+                                ./img/mesa8_400w.webp 400w, 
+                                ./img/mesa8_800w.webp 800w, 
+                                ./img/mesa8.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa8.jpg"
+                            alt="Mesa 8"
+                        >
+                    </a></li>
+                    <li><a href="img/mesa9.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
+                        <img 
+                            srcset="
+                                ./img/mesa9_400w.webp 400w, 
+                                ./img/mesa9_800w.webp 800w, 
+                                ./img/mesa9.webp 1024w"
+                            sizes="
+                                (min-width: 978px) 1024px, 
+                                (min-width: 600px) 800px, 400px"
+                            src="./img/mesa9.jpg"
+                            alt="Mesa 9"
+                        >
+                    </a></li>
                 </ul>
 
             </div>
