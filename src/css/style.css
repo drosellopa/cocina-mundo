@@ -121,6 +121,7 @@ figure img {
     background-size: cover;
     color: var(--light2);
     position: relative;
+    overflow: hidden;
 }
 .header-container {    
     background-color: var(--dark-opacity);
