@@ -41,7 +41,7 @@ nav {
     font-family: "Tangerine", cursive;
     font-weight: 700;
     font-style: normal;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--main2);    
 }
 /* Botones */
@@ -58,13 +58,14 @@ nav {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: .8rem;
+    font-size: .9rem;
     letter-spacing: 3px;
 }
 .bclaro {
     background-color: var(--dark-opacity);
     color: var(--light1);
     border: 1px solid var(--dark2);
+
 }
 .bclaro:hover {
     background-color: #fff2;
@@ -74,8 +75,9 @@ nav {
 .bmain {
     background-color: var(--main2);
     color: var(--light1);
-    /* border: 1px solid var(--light1); */
+    text-shadow: 1px 1px 2px black;
     border: 7px double var(--light1);
+   
 }
 .bmain:hover {
     background-color: var(--main1);
@@ -90,7 +92,7 @@ section {
     margin: auto;
 }
 section h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
@@ -167,6 +169,7 @@ svg.spiral  {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    width: 50px;
     
 }
 svg.spiral > path { 
@@ -194,6 +197,8 @@ svg.spiral > path {
 }
 .main-header-title img {
     /* opacity: 0; */
+    width: 100%;
+    max-width: 250px;
     animation-name: header_animate;
     animation-delay: .5s;
     animation-duration: 5s;
@@ -263,9 +268,7 @@ svg.spiral > path {
 }
 
 /* RECETAS */ 
-#recetas {
 
-}
 .contenedor-recetas {
     display: flex;
     flex-wrap: wrap;
@@ -286,9 +289,7 @@ svg.spiral > path {
 #galeria {
     background-color: black;
 }
-#galeria h2 {
-    /* color: var(--light1); */
-}
+
 
 .galeria {
     display: grid;
@@ -407,6 +408,16 @@ svg.spiral > path {
     .main-header-title img {
         width: 300px;
         margin-bottom: 25px;
+    }
+
+    /*Correccion AA Tamaño títulos en móviles pequeños*/
+
+    .comic-title {        
+        font-size: 4rem;         
+    }
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
     }
 }
 
