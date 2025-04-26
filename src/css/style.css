@@ -60,6 +60,7 @@ nav {
     font-weight: 500;
     font-size: .9rem;
     letter-spacing: 3px;
+    
 }
 .bclaro {
     background-color: var(--dark-opacity);
@@ -70,19 +71,49 @@ nav {
 .bclaro:hover {
     background-color: #fff2;
     color: var(--light1);
-    border: 1px solid var(--light1);    
+    border: 1px solid var(--light1);  
+
 }
 .bmain {
     background-color: var(--main2);
     color: var(--light1);
-    text-shadow: 1px 1px 2px black;
+    /* text-shadow: 1px 1px 2px black; */
     border: 7px double var(--light1);
+   
    
 }
 .bmain:hover {
     background-color: var(--main1);
-    
+    animation: shake-top 0.8s ease both;    
 }
+/* Animaciones boton Shake de https://animista.net */
+@keyframes shake-top {
+    0%,
+    100% {                   
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+    10% {
+        transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(2deg);
+    }
+  }
+ 
 /* Secciones */
 section {
     padding: 80px 30px;
@@ -115,6 +146,8 @@ figure img {
     width: 100%;
     
 }
+
+
 
 /* HEADER  */
 .main-header {    
