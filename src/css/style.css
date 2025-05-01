@@ -78,9 +78,7 @@ nav {
     background-color: var(--main2);
     color: var(--light1);
     /* text-shadow: 1px 1px 2px black; */
-    border: 7px double var(--light1);
-   
-   
+    border: 7px double var(--light1);   
 }
 .bmain:hover {
     background-color: var(--main1);
@@ -143,12 +141,8 @@ figure {
     max-width: 500px;
 }
 figure img {
-    width: 100%;
-    
+    width: 100%;    
 }
-
-
-
 /* HEADER  */
 .main-header {    
     background-image: linear-gradient(#000a,#000a),url(../img/mesa6.jpg);
@@ -166,9 +160,7 @@ figure img {
     left: 0;
     right: 0;
     transition: 2s;
-    z-index: 100;
-    
-    
+    z-index: 100;    
 }
 .header-container > .section-container {
     display: flex;
@@ -275,15 +267,18 @@ svg.spiral > path {
     margin-bottom: 1.5rem;
     list-style: none;
     text-align: center;
+    
 }
 .main-menu a {
     font-weight: 600;
     text-decoration: none;
     color: var(--light1);  
     transition: .5s; 
+    
 }
 .main-menu a:hover {
     color: var(--main1);
+    border-bottom: 1px solid var(--main1);
 }
 
 /* SECTION HISTORIA */
