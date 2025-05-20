@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     const mainMenu = document.querySelector('.main-menu');
-    const barsMenu = document.querySelector('.fa-bars');
+    const barsMenu = document.querySelector('.icon_menu');
     const headerContainer = document.querySelector('.header-container');
     const arrowUp = document.querySelector('.fa-arrow-up');
     let menuOpen = false;

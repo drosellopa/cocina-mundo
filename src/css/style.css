@@ -172,11 +172,12 @@ figure img {
     font-weight: 700;
     color: var(--light2);
 }
-.fa-bars {
+.icon_menu {
     font-size: 2rem;
     color: var(--light2);
+    
 }
-.fa-bars:hover {
+.icon_menu:hover {
     color: var(--light1);
     cursor: pointer;
 }
@@ -475,7 +476,7 @@ svg.spiral > path {
 
     /* MAIN MENU ORDENADOR */
     
-    .fa-bars {
+    .icon_menu {
         display: none;
     }
     .main-menu {
