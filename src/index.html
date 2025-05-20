@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../node_modules/lightbox2/dist/css/lightbox.min.css">
-    <script src="../node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js" type="module"></script>  
-    <script src="./js/cocina.js" type="module"></script>
+    <script src="../node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js" type="module" defer></script>  
+    <script src="./js/cocina.js" type="module" defer></script>
     <link rel="icon" href="./img/favicon.png">
 </head>
 <body>
@@ -30,17 +30,8 @@
             
         </div> <!-- Header container -->
         <div class="main-header-title">
-            <!-- <svg class="spiral" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 100 100 
-                         m -75, 0 
-                         a 75,75 0 1,0 150,0 
-                         a 60,60 0 1,0 -120,0 
-                         a 45,45 0 1,0 90,0 
-                         a 30,30 0 1,0 -60,0" 
-                      fill="none" stroke="#fff5" stroke-width="1"/>
-            </svg> -->
             <svg class="spiral" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.264 501.974"><path d="M 44.282 207.151 C 44.282 357.466 25.34 418.582 36.225 471.648 C 41.411 496.936 63.601 493.954 67.425 471.648 C 76.244 420.241 59.747 354.428 59.747 207.151 C 59.747 190.01 93.358 192.954 93.358 134.359 C 93.358 61.022 71.969 12.461 51.585 12.461 C 32.56 12.461 11.907 65.698 11.907 134.359 C 11.907 189.382 44.282 193.022 44.282 207.151 Z" style="fill: none; stroke-width: 5px; stroke: rgb(242, 180, 16);"/></svg>
-            <img src="./img/logo2.webp" alt="Logotipo">
+            <img src="./img/logo2.webp" alt="Logotipo" loading="lazy">
             
             <!-- <img src="./img/spiral.png" alt="Logotipo Espiral" width="120"> -->
             <h1>Cocina Peruana</h1>
@@ -57,7 +48,6 @@
 
                 <a href="#recetas" class="button bmain">Recetas</a>
                 <figure>
-                    <!-- <img src="./img/ceviche.webp" alt="Ceviche de pescado"> -->
                     <img 
                         srcset="./img/ceviche_400w.webp 400w, 
                                 ./img/ceviche_800w.webp 800w, 
@@ -66,7 +56,8 @@
                         sizes="(min-width: 1200px) 1000px, 
                             (min-width: 978px) 800px, 
                             400px"
-                        alt="Ceviche de pescado">
+                        alt="Ceviche de pescado"
+                        loading="lazy">                        >
                     <figcaption>
                         <p>Ceviche de pescado | <small>Imagen: Grok IA</small></p>
                     </figcaption>
@@ -97,6 +88,7 @@
                                     (min-width: 600px) 800px, 400px"
                                 src="./img/aji_gallina.jpg"
                                 alt="Ají de gallina"
+                                loading="lazy"               
                             >
                             <figcaption>
                                 <p>Ají de gallina. <small>Foto: <a href="https://commons.wikimedia.org/wiki/File:Aj%C3%AD_de_gallina_-_Tradicional.jpg">Feralbt</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</small></p>
@@ -119,6 +111,8 @@
                                 (min-width: 600px) 800px, 400px"
                                 src="./img/reventado_cangrejo.jpg"
                                 alt="Reventado de cangrejo" 
+                                loading="lazy"
+
                             >
                             <figcaption><p>Reventado de cangrejo. <small>Imagen: Grok.ai</small></p></figcaption>
                         </figure>
@@ -139,6 +133,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa3.jpg"
                             alt="Mesa 3"
+                            loading="lazy"
                         >
                         <h3>Receta 3</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit eum rem eos pariatur, est vitae necessitatibus deserunt labore voluptas. Fugit vel aut excepturi architecto? Neque!</p>
@@ -156,6 +151,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa4.jpg"
                             alt="Receta 4"
+                            loading="lazy"
                         >
                         <h3>Receta 4</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit eum rem eos pariatur, est vitae necessitatibus deserunt labore voluptas. Fugit vel aut excepturi architecto? Neque!</p>
@@ -182,6 +178,7 @@
                             (min-width: 600px) 800px, 400px"
                         src="./img/mesa1.jpg"
                         alt="Maíz, yuca y tomate en mesa de cocina"
+                         loading="lazy"
                     ></a></li>
                     <li><a href="./img/mesa2.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
                         <img 
@@ -194,6 +191,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa2.jpg"
                             alt="Cilantro, yuca en mesa de cocina"
+                             loading="lazy"
                         >
                     </a></li>
                     <li><a href="./img/postre1.jpg" data-lightbox="recetas" data-title="Postre típico del  | Image by Pexels from Pixabay">
@@ -207,6 +205,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/postre1.jpg"
                             alt="Mil hojas de crema"
+                             loading="lazy"
                         >
                     </a></li>
                     <li><a href="img/mesa3.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
@@ -220,6 +219,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa3.jpg"
                             alt="Diferentes ingredientes en mesa: Tomate, yuca, cilantro"
+                             loading="lazy"
                         >
                     </a></li>
                     <li><a href="img/mesa4.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
@@ -233,6 +233,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa5.jpg"
                             alt="Ají peruano de diferentes colores y variedades, rojo, amarillo, rocoto "
+                             loading="lazy"
                         >
                     </a></li>
                     <li><a href="img/mesa5.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
@@ -246,6 +247,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa6.jpg"
                             alt="Ingredientes peruanos como patata, ají, yuca, cilantro"
+                             loading="lazy"
                         >
                     </a></li>
                     <li><a href="img/mesa6.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
@@ -259,20 +261,11 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa7.jpg"
                             alt="Diferentes variedades de tomate"
+                             loading="lazy"
                         >
                     </a></li>
                     <li><a href="img/postre2.jpg" data-lightbox="recetas" data-title="Postre | Image by Pexels from Pixabay">
-                        <!-- <img 
-                            srcset="
-                                ./img/postre2_400w.webp 400w, 
-                                ./img/postre2_800w.webp 800w, 
-                                ./img/postre2.webp 1024w"
-                            sizes="
-                                (min-width: 978px) 1024px, 
-                                (min-width: 600px) 800px, 400px"
-                            src="./img/postre2.jpg"
-                            alt="Postre 2"
-                        > -->
+                        
                         <!-- DIRECCIÓN DE ARTE -->
                         <picture>
                             <source 
@@ -285,6 +278,7 @@
                             <img 
                                 src="./img/postre2.jpg" 
                                 alt="Mil hojas de dulce de leche"
+                                 loading="lazy"
                             >
                         </picture>
                     </a></li>
@@ -299,6 +293,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa8.jpg"
                             alt="Diferente ingredientes de la comida peruana en mesa de cocina"
+                             loading="lazy"
                         >
                     </a></li>
                     <li><a href="img/mesa9.jpg" data-lightbox="recetas" data-title="Mesa con ingredientes típicos peruanos. | Imagen: grok.com IA">
@@ -312,6 +307,7 @@
                                 (min-width: 600px) 800px, 400px"
                             src="./img/mesa9.jpg"
                             alt="Patata, yuca y cilantro en mesa de cocina peruana"
+                             loading="lazy"
                         >
                     </a></li>
                 </ul>

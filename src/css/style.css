@@ -145,7 +145,7 @@ figure img {
 }
 /* HEADER  */
 .main-header {    
-    background-image: linear-gradient(#000a,#000a),url(../img/mesa6.jpg);
+    background-image: linear-gradient(#000a,#000a),url(../img/mesa6_400w.webp);
     background-position: center;
     background-size: cover;
     color: var(--light2);
@@ -433,6 +433,9 @@ svg.spiral > path {
 
 /*  RESPONSIVE TABLET  600PX*/
 @media (min-width: 600px){
+    .main-header {    
+        background-image: linear-gradient(#000a,#000a),url(../img/mesa6_800w.webp);
+    }
     .main-header-title img {
         width: 300px;
         margin-bottom: 25px;
@@ -453,7 +456,9 @@ svg.spiral > path {
 
 @media (min-width: 978px){
     /* MAIN HEADER ORDENADOR */
-    
+    .main-header {    
+        background-image: linear-gradient(#000a,#000a),url(../img/mesa6.webp);
+    }
     .main-header-title img {
         width: 400px;
         margin-bottom: 30px;
