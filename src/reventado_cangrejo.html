@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ají de Gallina - Cocina Mundo</title>
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    
     <link rel="stylesheet" href="./css/style.css">
     <meta name="description" content="Descubre la receta del reventado de cangrejo, un plato típico de la costa norte del Perú. Aprende sobre su elaboración, ingredientes y fascinante historia.">
     <meta name="keywords" content="reventado de cangrejo, receta peruana, cocina peruana, gastronomía peruana, ingredientes reventado de cangrejo, preparación reventado de cangrejo, historia reventado de cangrejo, platos tradicionales peruanos">
@@ -13,7 +13,9 @@
     <link rel="icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine&display=swap" rel="stylesheet"></noscript>
+
 </head>
 <body>
     <header class="main-header">
@@ -34,8 +36,6 @@
             
         </div> <!-- Header container -->
         <div class="main-header-title receta cangrejo-main">
-            <!-- <img src="./img/logo2.webp" alt="Logotipo" width="250"> -->
-            <!-- <img src="./img/spiral.png" alt="Logotipo Espiral" width="120"> -->
             <h1>Reventado de cangrejo</h1>
             <p>Un plato típico de la costa norte del Perú</p>
             <a href="#receta" class="button bclaro">Receta</a>
@@ -58,6 +58,9 @@
                             ./img/reventado_cangrejo.jpg 1x"
                         src="./img/reventado_cangrejo.jpg"
                         alt="Reventado de cangrejo"
+                        width="auto"
+                        height="300"
+                        loading="lazy"
                     >
                     <figcaption>
                         <p>Reventado de cangrejo. <small>Foto: Grok.ai</small></p>
@@ -94,15 +97,15 @@
                 <h3>Galería de fotos</h3>
                 <div class="galeria-receta">
                     <figure>
-                        <img src="./img/aji_cebolla_400w.webp" alt="Ají y cebolla" width="400">
+                        <img src="./img/aji_cebolla_400w.webp" alt="Ají y cebolla" width="400" height="auto" loading="lazy">
                         <figcaption>Ají <small>Foto: Grok.ai</small></figcaption>
                     </figure>
                     <figure>
-                        <img src="./img/cangrejo_400w.webp" alt="Cangrejo" width="400">
+                        <img src="./img/cangrejo_400w.webp" alt="Cangrejo" width="400" height="auto" loading="lazy">
                         <figcaption>Cangrejo <small>Foto: Grok.ai</small></figcaption>
                     </figure>
                     <figure>
-                        <img src="./img/cebolla_400w.webp" alt="Cebolla cortada en juliana" width="400">
+                        <img src="./img/cebolla_400w.webp" alt="Cebolla cortada en juliana" width="400" height="auto" loading="lazy">
                         
                         <figcaption>Cebolla cortada en juliana <small>Foto: Grok.ai</small></figcaption>
                     </figure>
@@ -111,7 +114,7 @@
         </section>
     </main>
     <footer id="main-footer" class="centrada">
-        <img src="./img/logo2.webp" alt="Logotipo" class="footer-logo">  
+        <img src="./img/logo2.webp" alt="Logotipo" class="footer-logo" loading="lazy">  
         <div class="section-container footer-container">  
                 
             <div class="footer-column">
