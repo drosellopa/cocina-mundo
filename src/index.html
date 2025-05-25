@@ -10,6 +10,9 @@
     <!-- <script src="../node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js" type="module"></script>   -->
     <script src="./js/cocina.js" type="module"></script>
     <link rel="icon" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -57,7 +60,7 @@
                             (min-width: 978px) 800px, 
                             400px"
                         alt="Ceviche de pescado"
-                        >                        >
+                        >                        
                     <figcaption>
                         <p>Ceviche de pescado | <small>Imagen: Grok IA</small></p>
                     </figcaption>
@@ -354,7 +357,19 @@
 
     </footer>
     <a href="#" class="fas fa-arrow-up"></a>
-    
+    <script>
+        //Animación Espiral
+        const spiral = document.querySelector('.spiral');    
+        let spiralScale = 50;
+        let randomX;
+        let randomY;
+        setInterval(()=>{
+            randomX = parseInt(Math.random()*80);
+            randomY = parseInt(Math.random()*80);        
+            spiral.style.left = `${randomX}%`;
+            spiral.style.top = `${randomY}%`;       
+        },5000);
+    </script>
     
     
     

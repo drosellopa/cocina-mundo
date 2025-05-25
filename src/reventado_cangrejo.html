@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <meta name="description" content="Descubre la receta del reventado de cangrejo, un plato típico de la costa norte del Perú. Aprende sobre su elaboración, ingredientes y fascinante historia.">
     <meta name="keywords" content="reventado de cangrejo, receta peruana, cocina peruana, gastronomía peruana, ingredientes reventado de cangrejo, preparación reventado de cangrejo, historia reventado de cangrejo, platos tradicionales peruanos">
-    <script src="./js/cocina.js"></script>
+    <script src="./js/cocina.js" defer></script>
     <link rel="icon" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -49,7 +52,6 @@
                 <p>El reventado de cangrejo es un plato típico de la <strong>costa norte del Perú</strong>, especialmente del departamento de <em>La Libertad</em>.</p>
                 <p>Este plato se elabora a base de cangrejo, al que previamente se golpea para romperlo y liberar sus jugos, y un aderezo peruano al que se le añade huevo y yuyo. Se sirve con papas o yucas cocidas. Es muy popular en el balneario de <em>Huanchaco</em>, en la ciudad de <em>Trujillo</em>, donde se ha convertido en una especialidad local.</p>
                 <figure>
-                    <!-- <img src="./img/reventado_cangrejo.jpg" alt="Reventado de cangrejo"> -->
                     <img 
                         srcset="
                             ./img/reventado_cangrejo_72dpi.jpg 0.75x,
@@ -76,7 +78,7 @@
                     <li>Sal al gusto</li>
                 </ul>
                 <figure>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_WF_W6IMcgE?si=OA-ffdq2wzuEfv7_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/_WF_W6IMcgE?si=OA-ffdq2wzuEfv7_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <figcaption>Receta de cangrejo reventado</figcaption>
                 </figure>
                 <h3>Paso a paso</h3>
@@ -92,48 +94,16 @@
                 <h3>Galería de fotos</h3>
                 <div class="galeria-receta">
                     <figure>
-                        <!-- <img src="./img/aji_cebolla.jpg" alt="Ají y cebolla"> -->
-                        <img 
-                            srcset="
-                                ./img/aji_cebolla_400w.webp 400w, 
-                                ./img/aji_cebolla_800w.webp 800w, 
-                                ./img/aji_cebolla.webp 1024w"
-                            sizes="
-                                (min-width: 978px) 1024px, 
-                                (min-width: 600px) 800px, 400px"
-                            src="./img/aji_cebolla.jpg"
-                            alt="Ají con cebolla"
-                        >
+                        <img src="./img/aji_cebolla_400w.webp" alt="Ají y cebolla" width="400">
                         <figcaption>Ají <small>Foto: Grok.ai</small></figcaption>
                     </figure>
                     <figure>
-                        <!-- <img src="./img/cangrejo.jpg" alt="Cangrejo"> -->
-                        <img 
-                            srcset="
-                                ./img/cangrejo_400w.webp 400w, 
-                                ./img/cangrejo_800w.webp 800w, 
-                                ./img/cangrejo.webp 1024w"
-                            sizes="
-                                (min-width: 978px) 1024px, 
-                                (min-width: 600px) 800px, 400px"
-                            src="./img/cangrejo.jpg"
-                            alt="Cangrejo"
-                        >
+                        <img src="./img/cangrejo_400w.webp" alt="Cangrejo" width="400">
                         <figcaption>Cangrejo <small>Foto: Grok.ai</small></figcaption>
                     </figure>
                     <figure>
-                        <!-- <img src="./img/cebolla.jpg" alt="Cebolla cortada en juliana"> -->
-                        <img 
-                            srcset="
-                                ./img/cebolla_400w.webp 400w, 
-                                ./img/cebolla_800w.webp 800w, 
-                                ./img/cebolla.webp 1024w"
-                            sizes="
-                                (min-width: 978px) 1024px, 
-                                (min-width: 600px) 800px, 400px"
-                            src="./img/cebolla.jpg"
-                            alt="Cebolla cortada en juliana"
-                        >
+                        <img src="./img/cebolla_400w.webp" alt="Cebolla cortada en juliana" width="400">
+                        
                         <figcaption>Cebolla cortada en juliana <small>Foto: Grok.ai</small></figcaption>
                     </figure>
                 </div>

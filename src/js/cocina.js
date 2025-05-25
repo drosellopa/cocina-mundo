@@ -25,17 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
           
     });
 
-    //Animación Espiral
-    const spiral = document.querySelector('.spiral');    
-    let spiralScale = 50;
-    let randomX;
-    let randomY;
-    setInterval(()=>{
-        randomX = parseInt(Math.random()*80);
-        randomY = parseInt(Math.random()*80);        
-        spiral.style.left = `${randomX}%`;
-        spiral.style.top = `${randomY}%`;       
-    },5000);
+    
  
 
 
