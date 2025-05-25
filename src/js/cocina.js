@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function(){
     const mainMenu = document.querySelector('.main-menu');
     const barsMenu = document.querySelector('.icon_menu');
     const headerContainer = document.querySelector('.header-container');
@@ -24,14 +23,8 @@ document.addEventListener('DOMContentLoaded', function(){
         
           
     });
-
-    
- 
-
-
     
     
     
  
 
-});

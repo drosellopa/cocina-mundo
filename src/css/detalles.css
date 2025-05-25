@@ -1,0 +1,29 @@
+/*  RECETAS DE COCINA - DETALLES*/
+
+main.receta h3 {
+    margin: 20px 0;
+}
+main.receta p {
+    margin-bottom: 20px;
+}
+main.receta li {
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+.receta {
+    background-size: cover;
+    background-position: center;
+}
+.receta-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.galeria-receta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.galeria-receta > * {
+    flex: 1 1 200px;
+}
+

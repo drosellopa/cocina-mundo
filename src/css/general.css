@@ -1,0 +1,320 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark1: #222;
+    --dark2: #444;
+    --dark-opacity: #0003;
+    --main1: #f8bf2c;
+    --main2: #F2B410;
+    --light1: #fff; 
+    --light2: #ddd;
+    scroll-behavior: smooth;
+    
+}
+body {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.comic-title {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    color: var(--main2);    
+}
+/* Botones */
+.button {
+    /* width: 170px; */
+    margin: auto;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    user-select: none;
+    transition: .5s;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: 3px;
+    
+}
+/* HEADER  */
+.main-header {    
+    background-image: linear-gradient(#000a,#000a),url(../img/mesa6_400w.webp);
+    background-position: center;
+    background-size: cover;
+    color: var(--light2);
+    position: relative;
+    overflow: hidden;
+}
+.header-container {    
+    background-color: var(--dark-opacity);
+    padding: 20px 10px;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: 1s;
+    z-index: 100;    
+}
+.header-container > .section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#author {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--light2);
+}
+.icon_menu {
+    font-size: 2rem;
+    color: var(--light2);
+    
+}
+.icon_menu:hover {
+    color: var(--light1);
+    cursor: pointer;
+}
+.main-header-title{
+    text-align: center;
+    padding: 200px 20px;
+}
+
+/* Secciones */
+section {
+    padding: 80px 30px;
+}
+.section-container {
+    max-width: 900px;
+    margin: auto;
+}
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.centrada {
+    text-align: center;
+}
+/* Párrafos */
+p {
+    color: var(--dark2);
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+figure {
+    text-align: left;
+    margin: 20px auto 0;
+    max-width: 500px;
+}
+figure img {
+    width: 100%;    
+}
+/* MAIN MENU  */
+
+.main-menu {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    background-color: #000e;
+    padding: 50px 20px;
+    transition: .5s;
+}
+.main-menu li{
+    margin-bottom: 1.5rem;
+    list-style: none;
+    text-align: center;
+    
+}
+.main-menu a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--light1);  
+    transition: .5s; 
+    
+}
+.main-menu a:hover {
+    color: var(--main1);
+    border-bottom: 1px solid var(--main1);
+}
+
+
+/* MAIN FOOTER */
+#main-footer {
+    background-color: var(--dark1);
+    color: var(--light1);
+    padding: 50px 30px;
+}
+
+.footer-text {
+    color:var(--light2);
+}
+.footer-column {
+    padding: 30px;
+}
+.footer-column h4 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.footer-column h4::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--main1);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.footer-column > * {
+    margin-bottom: 5px;
+}
+.footer-logo {
+    max-width: 200px;
+}
+.footer-column a {
+    color: var(--light1);
+
+}
+.footer-column a:hover {
+    color: var(--main1);
+}
+
+.social .fab{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 20px;
+    color: var(--main1);
+    transition: .5s;
+}
+.social .fab:hover {
+    color: var(--light1);
+}
+
+/* FLECHA ARRIBA */
+.fa-arrow-up {
+    color: var(--main1);
+    position: fixed;
+    right: 5px;
+    bottom: 40px;
+    text-decoration: none;
+    font-size: 2rem;
+    opacity: .8;
+    z-index: 100;
+    display: none;
+    text-shadow: 3px 3px 3px black;
+}
+.fa-arrow-up:hover {
+    opacity: 1;
+    color: var(--main2);
+}
+
+/*  RESPONSIVE TABLET  600PX*/
+@media (min-width: 600px){
+    .main-header {    
+        background-image: linear-gradient(#000a,#000a),url(../img/mesa6_800w.webp);
+    }
+    .main-header-title img {
+        width: 300px;
+        margin-bottom: 25px;
+    }
+
+    /*Correccion AA Tamaño títulos en móviles pequeños*/
+
+    .comic-title {        
+        font-size: 4rem;         
+    }
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+/*  RESPONSIVE ORDENADOR  978PX*/
+
+@media (min-width: 978px){
+    /* MAIN HEADER ORDENADOR */
+   
+   
+    .main-header-title h1 {
+        color: var(--light1);
+        margin: 10px 0;
+        font-size: 4rem;
+    }
+    .main-header-title p {
+        color: var(--light2);
+        font-weight: 700;
+    }
+
+    /* MAIN MENU ORDENADOR */
+    
+    .icon_menu {
+        display: none;
+    }
+    .main-menu {
+        position: static;        
+        background-color: initial;
+        padding: initial;
+        transition: initial;
+    }
+    .main-menu ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+    .main-menu li{
+        margin-bottom: initial;        
+        text-align: center;
+    }
+    .main-menu a {
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--light1);  
+        transition: .5s; 
+    }
+    .main-menu a:hover {
+        color: var(--main1);
+    }
+    /* MAIN FOOTER ORDENADOR */
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .footer-column {
+        flex: 1 1 400px;
+    }
+    .logo-footer {
+        max-width: 200px;
+    }
+
+}
