@@ -26,4 +26,17 @@ main.receta li {
 .galeria-receta > * {
     flex: 1 1 200px;
 }
+/*Fachada de Youtube*/
+.facade {
+    width: 400px;
+    height: 225px;
+    background-size: cover;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facade > svg {
+    cursor: pointer;
+    
+}
 
